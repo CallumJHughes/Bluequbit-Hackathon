@@ -5,6 +5,7 @@ from collections import Counter
 
 # Get file name from user
 file = input('Please write input .qasm file: ')
+file = "Circuits/" + file # Concatenates input file name with directory name so peaked circuits can be found
 
 # Load circuit
 qc = QuantumCircuit.from_qasm_file(file)
